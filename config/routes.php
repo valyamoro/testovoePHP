@@ -11,6 +11,16 @@ return [
         'model' => 'addProduct',
         'view' => 'product/add_product',
     ],
+    '#^edit_product?#' => [
+        'controller' => 'editProduct',
+        'model' => 'editProduct',
+        'view' => '',
+    ],
+    '#^product/edit_product?#' => [
+        'controller' => 'editProduct',
+        'model' => 'editProduct',
+        'view' => 'product/edit_product',
+    ],
     '#^#' => [
         'controller' => 'index',
         'model' => 'index',
