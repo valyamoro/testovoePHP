@@ -3,7 +3,7 @@
 return [
     'port' => 'mysql',
     'host' => 'localhost',
-    'dbname' => 'books2',
+    'dbname' => 'testovoe',
     'username' => 'root',
     'password' => '',
     'charset' => 'utf8mb4',

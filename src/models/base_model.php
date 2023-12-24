@@ -51,3 +51,12 @@ function connectionDB(): ?\PDO
 
     return $dbh;
 }
+
+function uploadImage(array $data): string
+{
+    $filePath =  __DIR__ . '\..\..\uploads\\' . \uniqid() . $data['name'];
+
+    \move_uploaded_file($data['tmp_name'], $filePath);
+
+    return '\..\\' . \strstr($filePath, 'uploads');
+}
