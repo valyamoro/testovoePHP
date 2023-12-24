@@ -31,6 +31,16 @@ return [
         'model' => 'deleteProduct',
         'view' => '',
     ],
+    '#^update_price?#' => [
+        'controller' => 'updatePrice',
+        'model' => 'updatePrice',
+        'view' => '',
+    ],
+    '#^product/update_price?#' => [
+        'controller' => 'updatePrice',
+        'model' => 'updatePrice',
+        'view' => '',
+    ],
     '#^#' => [
         'controller' => 'index',
         'model' => 'index',
