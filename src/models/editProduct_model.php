@@ -80,3 +80,14 @@ function editProduct(array $data, int $id): bool
 
     return (bool)$sth->rowCount();
 }
+
+function getImageById($id): bool|array
+{
+    $query = 'SELECT image_path FROM products WHERE id=? LIMIT 1';
+
+    $sth = connectionDB()->prepare($query);
+
+    $sth->execute([$id]);
+
+    return $sth->fetch();
+}
