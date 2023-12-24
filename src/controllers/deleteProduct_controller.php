@@ -9,5 +9,6 @@ if ($isDeletedImage) {
     deleteProduct($id);
 } else {
     $_SESSION['error'] = 'Картинка не удалилась' . "\n";
-    redirect();
 }
+
+redirect('/');

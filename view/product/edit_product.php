@@ -1,4 +1,4 @@
-<?php if(!empty($_SESSION['msg'])): ?>
+<?php if (!empty($_SESSION['msg'])): ?>
     <?php echo '<p class="msg"> ' . nl2br($_SESSION['msg'][0]) . ' </p>'; ?>
     <?php echo '<p class="msg"> ' . nl2br($_SESSION['msg'][1]) . ' </p>'; ?>
     <?php unset($_SESSION['msg']); ?>
@@ -22,3 +22,4 @@
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+<a href="../delete_product/?id=<?=$_GET['id']; ?>">Удалить</a>;
