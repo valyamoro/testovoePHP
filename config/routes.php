@@ -21,6 +21,16 @@ return [
         'model' => 'editProduct',
         'view' => 'product/edit_product',
     ],
+    '#^delete_product?#' => [
+        'controller' => 'deleteProduct',
+        'model' => 'deleteProduct',
+        'view' => '',
+    ],
+    '#^product/delete_product?#' => [
+        'controller' => 'deleteProduct',
+        'model' => 'deleteProduct',
+        'view' => '',
+    ],
     '#^#' => [
         'controller' => 'index',
         'model' => 'index',
